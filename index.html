@@ -1,5 +1,5 @@
 <!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f6f3ff"><title>Консилиум для врачей — меньше рутины, больше медицины</title><meta name="description" content="ИИ-ассистент врача: документация, протоколы, анализы, доход с подписки пациентов."><link rel="icon" href="https://api.appconsilium.ru/storage/v1/object/public/avatars/landing/mascot_static.png"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet"><style>
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f6f3ff;color:#1d1533;font-family:Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f6f3ff;color:#1d1533;font-family:Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:clip}
 a{color:inherit}
 .nav{position:fixed;top:calc(env(safe-area-inset-top, 0px) + 12px);left:10px;right:10px;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:8px 8px 8px 12px;border-radius:18px;background:rgba(255,255,255,.72);border:1px solid #ECEAF2;box-shadow:0 8px 30px rgba(108,74,212,.12);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);transform:translateY(calc(-100% - env(safe-area-inset-top, 0px) - 30px));transition:transform .5s cubic-bezier(.2,1,.3,1)}
 .nav.on{transform:none}.nb{color:#1d1533;display:flex;align-items:center;gap:8px;font-weight:800;text-decoration:none}.nb i{width:28px;height:28px;border-radius:9px;display:grid;place-items:center;background:linear-gradient(135deg,#6C4AD4,#8B6BE0)}
@@ -52,6 +52,7 @@ footer{padding:30px 18px 40px;text-align:center;border-top:1px solid #ECEAF2;col
 .kl-doc:hover{transform:translateY(-3px) rotate(-1deg)}
 .kl-doc b{font-size:18px;color:#6C4AD4}.kl-doc span{font-size:12px;color:#5C4E78;line-height:1.4}
 .kd-mock.rv{transform:translateY(34px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1);transition-delay:.16s}.kd-mock.rv.in{transform:none}
+.csh-fade{height:140px;margin-top:-1px;background:linear-gradient(180deg,#0b0619 0%,#2a1a4f 35%,#b9a9e6 75%,#f6f3ff 100%)}main#f{scroll-snap-align:start}.csh-stage:after{display:none}
 </style></head><body id="top"><header class="nav"><a class="nb" href="#top"><i><svg width="13" height="17" viewBox="0 0 571 736"><path fill="#fff" transform="matrix(1 0 0 -1 0 736)" d="M98 725 c-62 -11 -90 -84 -51 -133 42 -54 129 -34 144 34 12 56 -38 109 -93 99z M453 621 c-134 -22 -368 -217 -424 -353 -62 -151 35 -257 237 -257 164 -1 266 38 284 107 17 64 -49 136 -159 173 -67 22 -181 29 -166 10 3 -4 7 -5 40 -15 67 -22 104 -39 131 -61 42 -34 27 -74 -31 -80 -123 -12 -211 149 -126 230 27 26 44 34 160 75 98 34 130 52 151 84 34 51 -20 99 -97 87z"/></svg></i>Консилиум</a><nav><a href="#f">Возможности</a><a href="#h">Как начать</a><a href="#q">Вопросы</a><a href="https://09f2d0.creatium.site/">Пациентам</a></nav><a class="nl" href="https://d7f660.creatium.site/doctor-login">Войти</a></header><!-- Консилиум · hero (вставить в блок «HTML-код» Creatium) -->
 <section class="csh" id="csh">
 <div class="csh-snaps"><i style="top:0svh"></i><i style="top:100svh"></i><i style="top:200svh"></i><i style="top:300svh"></i><i style="top:400svh"></i><i style="top:500svh"></i><i style="top:600svh"></i><i style="top:700svh"></i><i style="top:800svh"></i><i style="top:900svh"></i></div><div class="csh-stage">
@@ -81,7 +82,7 @@ footer{padding:30px 18px 40px;text-align:center;border-top:1px solid #ECEAF2;col
 </section>
 <style>
 .csh{--p:#6C4AD4;--p2:#8B6BE0;--pk:#E25BC8;--ink:#1d1533;position:relative;height:1000svh;background:#f6f3ff;font-family:Manrope,Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#fff;-webkit-font-smoothing:antialiased}
-.csh *{box-sizing:border-box;margin:0}.csh-snaps{position:absolute;inset:0;pointer-events:none}.csh-snaps i{position:absolute;left:0;width:1px;height:100svh;scroll-snap-align:start;scroll-snap-stop:always}html.snap{scroll-snap-type:y mandatory}
+.csh *{box-sizing:border-box;margin:0}.csh-snaps{position:absolute;inset:0;pointer-events:none}.csh-snaps i{position:absolute;left:0;width:1px;height:100svh;scroll-snap-align:start;scroll-snap-stop:always}html{scroll-snap-type:y proximity}
 .csh-stage{position:sticky;top:0;height:100svh;overflow:hidden;background:radial-gradient(120% 70% at 50% 0%,#2a1766 0%,#140b33 45%,#0b0619 100%)}
 .csh-stage:after{content:"";position:absolute;left:0;right:0;bottom:0;height:120px;background:linear-gradient(rgba(246,243,255,0),#f6f3ff);opacity:var(--end,0);transition:opacity .8s;pointer-events:none;z-index:9}
 .csh-fx{position:absolute;inset:0;width:100%;height:100%;z-index:0}
@@ -122,7 +123,7 @@ footer{padding:30px 18px 40px;text-align:center;border-top:1px solid #ECEAF2;col
 .csh-ic{flex:none;width:56px;height:56px;border-radius:18px;display:grid;place-items:center;font-size:28px;background:linear-gradient(135deg,#7a55ec,#d34fc0);box-shadow:0 8px 24px rgba(211,79,192,.45),inset 0 1px 0 rgba(255,255,255,.4)}
 .csh-ct b{display:block;font-size:23px;line-height:1.15;font-weight:800;letter-spacing:-.02em}
 .csh-ct span{display:block;margin-top:6px;font-size:16px;line-height:1.35;color:rgba(235,228,255,.75)}
-.csh-final{position:absolute;left:0;right:0;bottom:calc(env(safe-area-inset-bottom) + 130px);text-align:center;z-index:7;opacity:0;transform:translateY(30px);transition:opacity .6s,transform .7s cubic-bezier(.2,1.2,.3,1);pointer-events:none;padding:0 22px}
+.csh-final{position:absolute;left:0;right:0;bottom:calc(env(safe-area-inset-bottom) + 70px);text-align:center;z-index:7;opacity:0;transform:translateY(30px);transition:opacity .6s,transform .7s cubic-bezier(.2,1.2,.3,1);pointer-events:none;padding:0 22px}
 .csh.fin .csh-final{opacity:1;transform:none;pointer-events:auto}
 .csh-final-t{font-size:22px;font-weight:800;letter-spacing:-.02em;margin-bottom:16px}
 .csh-cta{position:relative;display:inline-flex;align-items:center;gap:10px;padding:18px 30px;border-radius:99px;font-weight:800;font-size:18px;color:#fff;text-decoration:none;background:linear-gradient(90deg,#7a55ec,#d34fc0);box-shadow:0 14px 40px rgba(211,79,192,.5),inset 0 1px 0 rgba(255,255,255,.35);overflow:hidden}
@@ -142,6 +143,7 @@ footer{padding:30px 18px 40px;text-align:center;border-top:1px solid #ECEAF2;col
 @media (min-width:900px){.csh-core{top:55%;width:340px}.csh-cards{height:170px}.csh-ct b{font-size:24px}}
 @media (max-height:700px){.csh-core{width:min(52vw,250px);top:50%}.csh-sub{display:none}}
 @media (prefers-reduced-motion:reduce){.csh *,.csh *:before,.csh *:after{animation:none!important;transition:none!important}}
+.csh-fade{height:140px;margin-top:-1px;background:linear-gradient(180deg,#0b0619 0%,#2a1a4f 35%,#b9a9e6 75%,#f6f3ff 100%)}main#f{scroll-snap-align:start}.csh-stage:after{display:none}
 </style>
 <script>
 (function(){
@@ -160,7 +162,7 @@ F.forEach(function(f,i){var c=document.createElement('div');c.className='csh-car
 var o=document.createElement('div');o.className='csh-orb';o.style.setProperty('--a',(i*360/N)+'deg');o.innerHTML='<span>'+f[0]+'</span>';orbs.appendChild(o);os.push(o)});
 var rm=matchMedia('(prefers-reduced-motion: reduce)').matches,num=root.querySelector('.csh-num'),bar=root.querySelector('.csh-bar i'),st=root.style,cur=-2,pulse=0,sp=0,tp=0;
 function prog(){var r=root.getBoundingClientRect(),h=root.offsetHeight-innerHeight;return Math.min(1,Math.max(0,-r.top/h))}
-function step(p){var y=-root.getBoundingClientRect().top/innerHeight,s=Math.max(-1,Math.min(N,Math.round(y)-1));document.documentElement.classList.toggle('snap',y<8.9);if(s===cur)return;cur=s;pulse=1;
+function step(p){var y=-root.getBoundingClientRect().top/innerHeight,s=Math.max(-1,Math.min(N,Math.round(y)-1));if(s===cur)return;cur=s;pulse=1;
 cs.forEach(function(c,i){c.classList.toggle('on',i===s);c.classList.toggle('past',i<s)});
 os.forEach(function(o,i){o.classList.toggle('on',i<=s&&s>=0)});
 root.classList.toggle('st',s>=0);root.classList.toggle('fin',s>=N);
@@ -172,7 +174,7 @@ st.setProperty('--rz',(rm?0:Math.sin(t*1.3)*3)+'deg');
 st.setProperty('--pulse',pulse.toFixed(3));
 var e=Math.min(1,p/.08);st.setProperty('--ty',(-e*30)+'px');st.setProperty('--to',(1-e*.15).toFixed(3));
 st.setProperty('--cy',(-e*30+ (cur>=N?-40:0))+'px');st.setProperty('--cs',(1-e*.08).toFixed(3));
-st.setProperty('--end',cur>=N?1:0);
+
 bar.style.width=(Math.max(0,Math.min(N,cur+1))/N*100)+'%';
 requestAnimationFrame(frame)}
 requestAnimationFrame(frame);
@@ -186,7 +188,7 @@ var al=.35+Math.sin(q.a)*.3;x.beginPath();x.arc(q.x*W+Math.sin(q.a*.5)*6,q.y*H,q
 })();
 </script>
 
-<main id="f">
+<div class="csh-fade" aria-hidden="true"></div><main id="f">
 <div class="sec-h rv"><div class="tag">Возможности</div><h2 class="big">Всё для практики — <em>в одном кабинете</em></h2></div>
 <section class="feat  rv"><div class="ft"><div class="tag">01 · ИИ-агент</div><h2>Консультант уровня коллеги — помнит каждого пациента</h2><ul><li>Помнит всё: анамнез, анализы, протоколы и переписку</li><li>Сводка по пациенту — до начала приёма</li><li>Второе мнение за секунды: дифф. ряд, лекарственные взаимодействия, ссылки на рекомендации</li></ul><p class="mut">Опирается на данные пациента и медицинскую литературу. Решение всегда за вами.</p></div><div class="mock glass"><div class="mh">🤖 ИИ-агент · <b>Анна, 34</b></div><div class="chips"><span>🧪 Анализы ×12</span><span>🎙 Протоколы ×3</span><span>📋 Анамнез</span></div><div class="sum"><b>Сводка:</b> ферритин ↓ 3 визита подряд, ТТГ ↑, жалобы на слабость</div><div class="b me">Можно ли назначить железо вместе с левотироксином?</div><div class="b ai">Да, но с интервалом не менее 4 часов: железо снижает всасывание левотироксина. Проверьте св. Т4 через 6–8 недель.</div><div class="src"><span>✓ Данные пациента</span><span>✓ Клин. рекомендации</span><span>✓ Инструкция ЛС</span></div><div class="ex">пример · данные вымышлены</div></div></section>
 <section class="feat r rv"><div class="ft"><div class="tag">02 · Голосовые протоколы</div><h2>Говорите с пациентом — протокол создаётся сам</h2><ul><li>Расшифровка речи</li><li>Резюме визита</li><li>Автозаполнение официальной документации</li></ul></div><div class="mock glass"><div class="mh">🎙 Протокол приёма <span class="rec">● REC 12:48</span></div><div class="wave"><i style="--h:66%;--d:1.46s;--l:-0.59s"></i><i style="--h:31%;--d:0.76s;--l:-0.80s"></i><i style="--h:71%;--d:1.17s;--l:-1.36s"></i><i style="--h:52%;--d:0.73s;--l:-0.65s"></i><i style="--h:33%;--d:0.89s;--l:-0.83s"></i><i style="--h:32%;--d:1.36s;--l:-0.19s"></i><i style="--h:53%;--d:1.20s;--l:-0.87s"></i><i style="--h:32%;--d:1.16s;--l:-0.60s"></i><i style="--h:53%;--d:0.74s;--l:-1.29s"></i><i style="--h:62%;--d:1.04s;--l:-0.81s"></i><i style="--h:98%;--d:0.95s;--l:-1.22s"></i><i style="--h:48%;--d:0.78s;--l:-0.86s"></i><i style="--h:49%;--d:1.00s;--l:-0.82s"></i><i style="--h:33%;--d:1.15s;--l:-0.93s"></i><i style="--h:88%;--d:1.24s;--l:-0.64s"></i><i style="--h:65%;--d:1.07s;--l:-1.39s"></i><i style="--h:71%;--d:0.94s;--l:-1.19s"></i><i style="--h:56%;--d:0.77s;--l:-0.45s"></i><i style="--h:88%;--d:1.40s;--l:-1.09s"></i><i style="--h:61%;--d:1.19s;--l:-0.11s"></i><i style="--h:90%;--d:1.03s;--l:-1.14s"></i><i style="--h:44%;--d:1.45s;--l:-0.63s"></i><i style="--h:34%;--d:1.31s;--l:-0.86s"></i><i style="--h:65%;--d:0.97s;--l:-0.53s"></i><i style="--h:88%;--d:1.16s;--l:-0.68s"></i><i style="--h:36%;--d:1.46s;--l:-0.71s"></i><i style="--h:33%;--d:0.75s;--l:-1.05s"></i><i style="--h:98%;--d:1.49s;--l:-1.23s"></i><i style="--h:61%;--d:1.27s;--l:-1.33s"></i><i style="--h:69%;--d:0.72s;--l:-0.69s"></i><i style="--h:46%;--d:1.19s;--l:-0.74s"></i><i style="--h:52%;--d:1.31s;--l:-0.19s"></i><i style="--h:56%;--d:1.02s;--l:-1.38s"></i><i style="--h:88%;--d:0.76s;--l:-0.67s"></i><i style="--h:95%;--d:0.92s;--l:-0.21s"></i><i style="--h:80%;--d:1.39s;--l:-0.42s"></i><i style="--h:78%;--d:1.49s;--l:-1.02s"></i><i style="--h:73%;--d:1.47s;--l:-0.23s"></i><i style="--h:47%;--d:0.82s;--l:-0.99s"></i><i style="--h:26%;--d:1.09s;--l:-0.88s"></i></div><dl><dt>Жалобы</dt><dd>слабость, утомляемость</dd><dt>Анамнез</dt><dd>2 месяца, без лечения</dd><dt>План</dt><dd>св. Т4, контроль ферритина</dd></dl><div class="ex">пример · данные вымышлены</div></div></section>
@@ -222,7 +224,7 @@ var al=.35+Math.sin(q.a)*.3;x.beginPath();x.arc(q.x*W+Math.sin(q.a*.5)*6,q.y*H,q
 <section class="fin rv"><img src="https://api.appconsilium.ru/storage/v1/object/public/avatars/landing/mascot_static.png" alt="" width="160" height="160"><h2 class="big">Попробуйте на <em>тестовом пациенте</em></h2><p class="mut c">Регистрация займёт пару минут, ИИ-пациент уже ждёт.</p><a class="csh-cta" href="https://d7f660.creatium.site/doctor-login">Попробовать бесплатно<span>→</span></a></section>
 </main>
 <footer><div><a href="https://09f2d0.creatium.site/">Пациентам</a><a href="#f">Возможности</a><a href="https://d7f660.creatium.site/doctor-login">Вход для врача</a></div><p>ИИ-ассистент Консилиума — вспомогательный инструмент. Он не является медицинским изделием, не ставит диагнозы и не заменяет клиническое суждение врача. Ответственность за диагноз и лечение несёт лечащий врач.</p><p>© Консилиум</p></footer><script>
-(function(){var nav=document.querySelector('.nav'),hero=document.getElementById('csh');addEventListener('scroll',function(){nav.classList.toggle('on',scrollY>hero.offsetHeight-innerHeight*1.2)},{passive:true});
+(function(){var nav=document.querySelector('.nav'),hero=document.getElementById('csh');var fade=document.querySelector('.csh-fade'),navOn=false;function nv(){var b=fade.getBoundingClientRect().bottom;if(!navOn&&b<-40){navOn=true;nav.classList.add('on')}else if(navOn&&b>40){navOn=false;nav.classList.remove('on')}}addEventListener('scroll',nv,{passive:true});nv();
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var t=e.target;t.classList.add('in');io.unobserve(t);
 t.querySelectorAll('[data-n]').forEach(function(b){var n=+b.dataset.n,p=b.dataset.p||'',s=performance.now();(function f(now){var k=Math.min(1,(now-s)/1400);k=1-Math.pow(1-k,3);b.textContent=p+Math.round(n*k).toLocaleString('ru-RU');if(k<1)requestAnimationFrame(f)})(s)})})},{threshold:.15,rootMargin:'0px 0px -8% 0px'});
 document.querySelectorAll('.rv').forEach(function(e){io.observe(e)})})();
