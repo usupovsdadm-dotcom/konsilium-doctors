@@ -1,0 +1,217 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0b0619"><title>Консилиум для врачей — меньше рутины, больше медицины</title><meta name="description" content="ИИ-ассистент врача: документация, протоколы, анализы, доход с подписки пациентов."><link rel="icon" href="https://api.appconsilium.ru/storage/v1/object/public/avatars/landing/mascot_static.png"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet"><style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#0b0619;color:#fff;font-family:Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+.nav{position:fixed;top:10px;left:10px;right:10px;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:8px 8px 8px 12px;border-radius:18px;background:rgba(20,11,51,.55);border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);transform:translateY(-120%);transition:transform .5s cubic-bezier(.2,1,.3,1)}
+.nav.on{transform:none}.nb{display:flex;align-items:center;gap:8px;font-weight:800;text-decoration:none}.nb i{width:28px;height:28px;border-radius:9px;display:grid;place-items:center;background:linear-gradient(135deg,#6C4AD4,#8B6BE0)}
+.nav nav{display:none;gap:22px;font-size:14px}.nav nav a{text-decoration:none;opacity:.75}
+.nl{padding:9px 18px;border-radius:12px;background:linear-gradient(90deg,#7a55ec,#d34fc0);font-weight:700;text-decoration:none;font-size:14px}
+main{position:relative;padding:40px 18px 0;max-width:1100px;margin:0 auto}
+main:before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(60% 40% at 0% 20%,rgba(122,85,236,.22),transparent),radial-gradient(50% 40% at 100% 70%,rgba(211,79,192,.16),transparent)}
+section{margin:0 0 90px}
+.tag{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#c8b6ff;padding:6px 12px;border-radius:99px;background:rgba(157,123,255,.12);border:1px solid rgba(157,123,255,.25)}
+h2,h3{letter-spacing:-.025em;margin:14px 0 10px;line-height:1.12}h2{font-size:28px}h3{font-size:20px}
+.big{font-size:clamp(30px,8vw,52px);font-weight:800}em{font-style:normal;background:linear-gradient(90deg,#9d7bff,#e470d8);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sec-h{text-align:center;margin-bottom:28px}.mut{color:rgba(235,228,255,.68);line-height:1.55}.c{max-width:560px;margin:0 auto}
+p{line-height:1.55;color:rgba(235,228,255,.8)}
+ul{padding:0;list-style:none}li{position:relative;padding:0 0 10px 28px;line-height:1.45;color:rgba(235,228,255,.88)}ul li:before{content:"✓";position:absolute;left:0;top:0;width:20px;height:20px;border-radius:7px;display:grid;place-items:center;font-size:11px;background:linear-gradient(135deg,#7a55ec,#d34fc0)}
+.glass{background:linear-gradient(140deg,rgba(255,255,255,.1),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 20px 50px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.12);border-radius:26px}
+.feat{display:grid;gap:22px}.mock{padding:18px;position:relative}
+.mh{font-size:14px;font-weight:700;margin-bottom:12px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}.chips span,.src span{font-size:12px;padding:6px 10px;border-radius:99px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1)}
+.sum{font-size:13px;padding:10px 12px;border-radius:14px;background:rgba(157,123,255,.14);margin-bottom:10px;line-height:1.45}
+.b{font-size:14px;line-height:1.45;padding:11px 14px;border-radius:18px;margin:8px 0;max-width:88%}.me{margin-left:auto;background:linear-gradient(135deg,#7a55ec,#9d6be0);border-bottom-right-radius:6px}.ai{background:rgba(255,255,255,.09);border-bottom-left-radius:6px}
+.src{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}.src span{color:#8ff0c4}
+.ex{margin-top:12px;font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:rgba(235,228,255,.45)}
+.rec{margin-left:auto;color:#ff6b8b;font-size:12px;animation:bl 1.2s infinite}@keyframes bl{50%{opacity:.3}}
+.wave{display:flex;gap:3px;align-items:center;height:40px;margin-bottom:12px}.wave i{flex:1;border-radius:3px;background:linear-gradient(#e470d8,#7a55ec);animation:wv 1.1s ease-in-out infinite;height:30%}
+.wave i:nth-child(1){animation-delay:-0.14s}.wave i:nth-child(2){animation-delay:-0.27s}.wave i:nth-child(3){animation-delay:-0.41s}.wave i:nth-child(4){animation-delay:-0.55s}.wave i:nth-child(5){animation-delay:-0.69s}.wave i:nth-child(6){animation-delay:-0.82s}.wave i:nth-child(7){animation-delay:-0.96s}.wave i:nth-child(8){animation-delay:-1.10s}.wave i:nth-child(9){animation-delay:-0.13s}.wave i:nth-child(10){animation-delay:-0.27s}.wave i:nth-child(11){animation-delay:-0.41s}.wave i:nth-child(12){animation-delay:-0.54s}.wave i:nth-child(13){animation-delay:-0.68s}.wave i:nth-child(14){animation-delay:-0.82s}.wave i:nth-child(15){animation-delay:-0.96s}.wave i:nth-child(16){animation-delay:-1.09s}.wave i:nth-child(17){animation-delay:-0.13s}.wave i:nth-child(18){animation-delay:-0.27s}.wave i:nth-child(19){animation-delay:-0.40s}.wave i:nth-child(20){animation-delay:-0.54s}.wave i:nth-child(21){animation-delay:-0.68s}.wave i:nth-child(22){animation-delay:-0.81s}.wave i:nth-child(23){animation-delay:-0.95s}.wave i:nth-child(24){animation-delay:-1.09s}.wave i:nth-child(25){animation-delay:-0.12s}.wave i:nth-child(26){animation-delay:-0.26s}.wave i:nth-child(27){animation-delay:-0.40s}.wave i:nth-child(28){animation-delay:-0.54s}
+@keyframes wv{50%{height:100%}}
+dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 14px;font-size:14px}dt{color:#c8b6ff;font-weight:700}dd{margin:0;color:rgba(235,228,255,.85)}
+.pdf{margin-left:auto;font-size:11px;padding:4px 8px;border-radius:7px;background:#e25bc8}
+.doc{display:flex;gap:12px;align-items:center;padding:12px;border-radius:14px;background:rgba(255,255,255,.06);margin-top:8px;font-size:13px}.doc b{min-width:76px;font-size:15px}.doc span{color:rgba(235,228,255,.7)}
+.grid,.g3{display:grid;gap:16px}.grid{margin-bottom:90px}.card{padding:22px;border-radius:26px}.club .card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08)}
+.ic{width:48px;height:48px;border-radius:15px;display:grid;place-items:center;font-size:24px;background:linear-gradient(135deg,#7a55ec,#d34fc0);box-shadow:0 8px 22px rgba(211,79,192,.35);margin-bottom:14px}
+.hl{background:linear-gradient(140deg,rgba(122,85,236,.3),rgba(211,79,192,.12))}
+.bars{display:flex;align-items:flex-end;gap:7px;height:110px;margin-top:16px}.bars i{flex:1;height:0;border-radius:8px 8px 3px 3px;background:linear-gradient(#e470d8,#7a55ec);transition:height 1.2s cubic-bezier(.2,1,.3,1)}.in .bars i{height:var(--h)}
+.bars i:nth-child(1){transition-delay:0.08s}.bars i:nth-child(2){transition-delay:0.16s}.bars i:nth-child(3){transition-delay:0.24s}.bars i:nth-child(4){transition-delay:0.32s}.bars i:nth-child(5){transition-delay:0.40s}.bars i:nth-child(6){transition-delay:0.48s}.bars i:nth-child(7){transition-delay:0.56s}.bars i:nth-child(8){transition-delay:0.64s}
+.price{margin-top:12px;padding:12px 14px;border-radius:14px;background:rgba(143,240,196,.1);border:1px solid rgba(143,240,196,.25);font-size:14px}.price b{color:#8ff0c4}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}.stats div{text-align:center;padding:12px 4px;border-radius:14px;background:rgba(255,255,255,.06);font-size:12px;color:rgba(235,228,255,.7)}.stats b{display:block;font-size:24px;color:#fff;font-weight:800}
+.steps{list-style:none;padding:0;margin:0;display:grid;gap:12px;counter-reset:s}.steps li{display:flex;gap:14px;align-items:flex-start;padding:18px}.steps li span{flex:none;width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-size:22px;background:rgba(157,123,255,.18)}.steps b{font-size:17px}.steps p{margin:4px 0 0;font-size:14px}
+.faq{display:grid;gap:10px;max-width:760px;margin:0 auto}details{padding:0 18px}summary{list-style:none;cursor:pointer;padding:18px 30px 18px 0;font-weight:700;position:relative}summary::-webkit-details-marker{display:none}summary:after{content:"+";position:absolute;right:0;top:14px;font-size:24px;color:#c8b6ff;transition:transform .3s}details[open] summary:after{transform:rotate(45deg)}details p{margin:0 0 18px}
+.vid{padding:8px;overflow:hidden}.vid video{width:100%;display:block;border-radius:20px;background:#000}
+.club{padding:26px 18px;text-align:center;background:linear-gradient(160deg,rgba(122,85,236,.22),rgba(255,255,255,.03))}.club .g3{text-align:left;margin-top:20px}
+.av{margin-top:22px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:4px}.av span{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-size:20px;background:rgba(255,255,255,.1);border:2px solid #1a0f3d;margin-left:-10px}.av b{width:100%;margin-top:12px;font-size:15px}
+.fin{text-align:center;padding-bottom:20px}.fin img{width:150px;height:auto;filter:drop-shadow(0 20px 40px rgba(122,85,236,.6));animation:cshF 4.5s ease-in-out infinite}.fin .csh-cta{margin-top:20px}
+footer{padding:30px 18px 40px;text-align:center;border-top:1px solid rgba(255,255,255,.08);font-size:12px}footer div{display:flex;gap:18px;justify-content:center;margin-bottom:12px;font-size:14px}footer a{text-decoration:none;opacity:.8}footer p{max-width:640px;margin:8px auto;color:rgba(235,228,255,.45)}
+.rv{opacity:0;transform:translateY(36px) scale(.98);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}.rv.in{opacity:1;transform:none}
+@media(min-width:860px){.feat{grid-template-columns:1fr 1fr;align-items:center;gap:50px}.feat.r .ft{order:2}.grid{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}.steps{grid-template-columns:repeat(4,1fr)}.steps li{flex-direction:column}.nav nav{display:flex}.nav{max-width:1100px;margin:0 auto}h2{font-size:36px}}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}*{animation:none!important}}
+</style></head><body id="top"><header class="nav"><a class="nb" href="#top"><i><svg width="13" height="17" viewBox="0 0 571 736"><path fill="#fff" transform="matrix(1 0 0 -1 0 736)" d="M98 725 c-62 -11 -90 -84 -51 -133 42 -54 129 -34 144 34 12 56 -38 109 -93 99z M453 621 c-134 -22 -368 -217 -424 -353 -62 -151 35 -257 237 -257 164 -1 266 38 284 107 17 64 -49 136 -159 173 -67 22 -181 29 -166 10 3 -4 7 -5 40 -15 67 -22 104 -39 131 -61 42 -34 27 -74 -31 -80 -123 -12 -211 149 -126 230 27 26 44 34 160 75 98 34 130 52 151 84 34 51 -20 99 -97 87z"/></svg></i>Консилиум</a><nav><a href="#f">Возможности</a><a href="#h">Как начать</a><a href="#q">Вопросы</a><a href="https://09f2d0.creatium.site/">Пациентам</a></nav><a class="nl" href="https://d7f660.creatium.site/doctor-login">Войти</a></header><!-- Консилиум · hero (вставить в блок «HTML-код» Creatium) -->
+<section class="csh" id="csh">
+<div class="csh-stage">
+  <canvas class="csh-fx"></canvas>
+  <div class="csh-aura a1"></div><div class="csh-aura a2"></div>
+  <div class="csh-top">
+    <div class="csh-brand"><i><svg width="15" height="19" viewBox="0 0 571 736" aria-hidden="true"><path fill="#fff" transform="matrix(1 0 0 -1 0 736)" d="M98 725 c-62 -11 -90 -84 -51 -133 42 -54 129 -34 144 34 12 56 -38 109 -93 99z M453 621 c-134 -22 -368 -217 -424 -353 -62 -151 35 -257 237 -257 164 -1 266 38 284 107 17 64 -49 136 -159 173 -67 22 -181 29 -166 10 3 -4 7 -5 40 -15 67 -22 104 -39 131 -61 42 -34 27 -74 -31 -80 -123 -12 -211 149 -126 230 27 26 44 34 160 75 98 34 130 52 151 84 34 51 -20 99 -97 87z"/></svg></i><b>Консилиум</b><span>для врачей</span></div>
+    <h1 class="csh-h1">Меньше рутины —<br><em>больше медицины</em></h1>
+    <p class="csh-sub">ИИ-ассистент, который берёт рутину на себя</p>
+  </div>
+  <div class="csh-core">
+    <div class="csh-ring r1"></div><div class="csh-ring r2"></div><div class="csh-ring r3"></div>
+    <div class="csh-orbs"></div>
+    <div class="csh-glow"></div>
+    <div class="csh-bot"><img src="https://api.appconsilium.ru/storage/v1/object/public/avatars/landing/mascot_static.png" alt="Маскот Консилиума" width="320" height="320"></div>
+    <div class="csh-shadow"></div>
+  </div>
+  <div class="csh-cards"></div>
+  <div class="csh-final">
+    <div class="csh-final-t">8 суперсил — в одном приложении</div>
+    <a class="csh-cta" href="https://d7f660.creatium.site/doctor-login">Попробовать бесплатно<span>→</span></a>
+    <div class="csh-note">Регистрация за пару минут · решение всегда за врачом</div>
+  </div>
+  <div class="csh-prog"><span class="csh-num">01</span><div class="csh-bar"><i></i></div><span>08</span></div>
+  <div class="csh-hint">Листайте<i></i></div>
+</div>
+</section>
+<style>
+.csh{--p:#6C4AD4;--p2:#8B6BE0;--pk:#E25BC8;--ink:#1d1533;position:relative;height:620svh;background:#0d0820;font-family:Manrope,Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#fff;-webkit-font-smoothing:antialiased}
+.csh *{box-sizing:border-box;margin:0}
+.csh-stage{position:sticky;top:0;height:100svh;overflow:hidden;background:radial-gradient(120% 70% at 50% 0%,#2a1766 0%,#140b33 45%,#0b0619 100%)}
+.csh-stage:after{content:"";position:absolute;left:0;right:0;bottom:0;height:90px;background:linear-gradient(transparent,#0b0619);opacity:var(--end,0);pointer-events:none;z-index:9}
+.csh-fx{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+.csh-aura{position:absolute;border-radius:50%;filter:blur(60px);z-index:0;will-change:transform}
+.a1{width:70vmin;height:70vmin;left:-20vmin;top:20%;background:#7a55ec;opacity:.45;animation:cshA 12s ease-in-out infinite alternate}
+.a2{width:60vmin;height:60vmin;right:-18vmin;top:45%;background:#d34fc0;opacity:.32;animation:cshA 14s ease-in-out infinite alternate-reverse}
+@keyframes cshA{to{transform:translate(8vmin,-6vmin) scale(1.15)}}
+.csh-top{position:absolute;top:0;left:0;right:0;padding:calc(env(safe-area-inset-top) + 22px) 22px 0;text-align:center;z-index:5;transform:translateY(var(--ty,0));opacity:var(--to,1)}
+.csh-brand{display:inline-flex;align-items:center;gap:8px;padding:6px 14px 6px 6px;border-radius:99px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);font-size:14px}
+.csh-brand i{width:28px;height:28px;border-radius:9px;display:grid;place-items:center;background:linear-gradient(135deg,var(--p),var(--p2));box-shadow:0 4px 14px rgba(139,107,224,.6)}
+.csh-brand i svg{width:12px;height:16px}
+.csh-brand b{font-weight:800}.csh-brand span{opacity:.6}
+.csh-h1{margin-top:18px;font-size:clamp(32px,9.2vw,64px);line-height:1.04;font-weight:800;letter-spacing:-.035em}
+.csh-h1 em{font-style:normal;background:linear-gradient(90deg,#9d7bff,#e470d8 60%,#ff9bd5);-webkit-background-clip:text;background-clip:text;color:transparent;background-size:200% 100%;animation:cshG 6s ease-in-out infinite alternate}
+@keyframes cshG{to{background-position:100% 0}}
+.csh-sub{margin-top:12px;font-size:15px;color:rgba(235,228,255,.72)}
+.csh-core{position:absolute;left:50%;top:52%;width:min(76vw,340px);aspect-ratio:1;transform:translate(-50%,-50%) translateY(var(--cy,0px)) scale(var(--cs,1));z-index:3;perspective:900px}
+.csh-ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(190,170,255,.18)}
+.r1{inset:-8%;border-style:dashed;animation:cshR 40s linear infinite}
+.r2{inset:-26%;border-color:rgba(226,91,200,.12);animation:cshR 60s linear infinite reverse}
+.r3{inset:10%;background:radial-gradient(circle,rgba(139,107,224,.18),transparent 70%);border-color:rgba(255,255,255,.08)}
+@keyframes cshR{to{transform:rotate(360deg)}}
+.csh-glow{position:absolute;inset:18%;border-radius:50%;background:radial-gradient(circle,#a07dff 0%,rgba(160,125,255,.0) 70%);filter:blur(18px);opacity:calc(.55 + var(--pulse,0)*.45);transform:scale(calc(1 + var(--pulse,0)*.25))}
+.csh-bot{position:absolute;inset:6%;transform-style:preserve-3d;transform:rotateY(var(--ry,0deg)) rotateZ(var(--rz,0deg)) translateY(var(--by,0px)) scale(calc(1 + var(--pulse,0)*.06));will-change:transform}
+.csh-bot img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 24px 40px rgba(108,74,212,.55));animation:cshF 4.5s ease-in-out infinite}
+@keyframes cshF{50%{transform:translateY(-10px)}}
+.csh-shadow{position:absolute;left:28%;right:28%;bottom:2%;height:8%;border-radius:50%;background:rgba(0,0,0,.55);filter:blur(10px);animation:cshS 4.5s ease-in-out infinite}
+@keyframes cshS{50%{transform:scale(.8);opacity:.6}}
+.csh-orbs{position:absolute;inset:-14%;--rad:calc(min(68vw,330px)*.64);animation:cshR 50s linear infinite}
+.csh-orb{position:absolute;left:50%;top:50%;width:38px;height:38px;margin:-19px;border-radius:50%;display:grid;place-items:center;font-size:18px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 0 18px rgba(160,125,255,.5);opacity:0;transform:rotate(var(--a)) translateY(calc(var(--rad) * -1)) rotate(calc(var(--a) * -1)) scale(.3);transition:opacity .5s,transform .7s cubic-bezier(.2,1.4,.4,1)}
+.csh-orb.on{opacity:1;transform:rotate(var(--a)) translateY(calc(var(--rad) * -1)) rotate(calc(var(--a) * -1)) scale(1)}
+.csh-orb span{display:block;animation:cshR 50s linear infinite reverse}
+.csh-cards{position:absolute;left:0;right:0;bottom:calc(env(safe-area-inset-bottom) + 70px);height:150px;z-index:6}
+.csh-card{position:absolute;left:50%;bottom:0;width:min(88vw,440px);padding:18px 18px 18px 16px;display:flex;gap:14px;align-items:center;border-radius:24px;background:linear-gradient(135deg,rgba(255,255,255,.16),rgba(255,255,255,.05));border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(20px) saturate(1.4);-webkit-backdrop-filter:blur(20px) saturate(1.4);box-shadow:0 20px 50px rgba(5,0,25,.5),inset 0 1px 0 rgba(255,255,255,.25);opacity:0;transform:translate(-50%,60px) scale(.9);transition:opacity .55s cubic-bezier(.2,.8,.2,1),transform .7s cubic-bezier(.2,1.2,.3,1),filter .5s;pointer-events:none}
+.csh-card.on{opacity:1;transform:translate(-50%,0) scale(1)}
+.csh-card.past{opacity:0;transform:translate(-50%,-90px) scale(.85);filter:blur(6px)}
+.csh-card:before{content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1px;background:linear-gradient(120deg,#9d7bff,transparent 40%,transparent 60%,#e470d8);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:.8}
+.csh-ic{flex:none;width:56px;height:56px;border-radius:18px;display:grid;place-items:center;font-size:28px;background:linear-gradient(135deg,#7a55ec,#d34fc0);box-shadow:0 8px 24px rgba(211,79,192,.45),inset 0 1px 0 rgba(255,255,255,.4)}
+.csh-ct b{display:block;font-size:20px;line-height:1.15;font-weight:800;letter-spacing:-.02em}
+.csh-ct span{display:block;margin-top:5px;font-size:14px;line-height:1.35;color:rgba(235,228,255,.75)}
+.csh-final{position:absolute;left:0;right:0;bottom:calc(env(safe-area-inset-bottom) + 64px);text-align:center;z-index:7;opacity:0;transform:translateY(30px);transition:opacity .6s,transform .7s cubic-bezier(.2,1.2,.3,1);pointer-events:none;padding:0 22px}
+.csh.fin .csh-final{opacity:1;transform:none;pointer-events:auto}
+.csh-final-t{font-size:22px;font-weight:800;letter-spacing:-.02em;margin-bottom:16px}
+.csh-cta{position:relative;display:inline-flex;align-items:center;gap:10px;padding:18px 30px;border-radius:99px;font-weight:800;font-size:18px;color:#fff;text-decoration:none;background:linear-gradient(90deg,#7a55ec,#d34fc0);box-shadow:0 14px 40px rgba(211,79,192,.5),inset 0 1px 0 rgba(255,255,255,.35);overflow:hidden}
+.csh-cta:after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.5),transparent);transform:skewX(-20deg);animation:cshSh 2.8s ease-in-out infinite}
+@keyframes cshSh{60%,100%{left:130%}}
+.csh-cta span{transition:transform .3s}.csh-cta:hover span{transform:translateX(4px)}
+.csh-note{margin-top:12px;font-size:13px;color:rgba(235,228,255,.6)}
+.csh-prog{position:absolute;left:50%;bottom:calc(env(safe-area-inset-bottom) + 26px);transform:translateX(-50%);display:flex;align-items:center;gap:10px;font-size:12px;font-weight:700;color:rgba(235,228,255,.55);z-index:6;transition:opacity .4s}
+.csh-num{color:#fff}
+.csh-bar{width:120px;height:3px;border-radius:3px;background:rgba(255,255,255,.12);overflow:hidden}
+.csh-bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#9d7bff,#e470d8)}
+.csh.fin .csh-prog,.csh.st .csh-hint{opacity:0}
+.csh-hint{position:absolute;left:50%;bottom:calc(env(safe-area-inset-bottom) + 90px);transform:translateX(-50%);font-size:13px;color:rgba(235,228,255,.7);display:flex;flex-direction:column;align-items:center;gap:8px;z-index:6;transition:opacity .4s}
+.csh-hint i{width:22px;height:34px;border:2px solid rgba(255,255,255,.4);border-radius:12px;position:relative}
+.csh-hint i:after{content:"";position:absolute;left:50%;top:6px;width:4px;height:7px;margin-left:-2px;border-radius:2px;background:#fff;animation:cshW 1.6s ease-in-out infinite}
+@keyframes cshW{60%{transform:translateY(10px);opacity:0}100%{opacity:0}}
+@media (min-width:900px){.csh-core{top:55%;width:340px}.csh-cards{height:170px}.csh-ct b{font-size:24px}}
+@media (max-height:700px){.csh-core{width:min(52vw,250px);top:50%}.csh-sub{display:none}}
+@media (prefers-reduced-motion:reduce){.csh *,.csh *:before,.csh *:after{animation:none!important;transition:none!important}}
+</style>
+<script>
+(function(){
+var root=document.getElementById('csh');if(!root||root.dataset.ok)return;root.dataset.ok=1;
+var F=[["📝","Пишет документацию","Протоколы, выписки, назначения — за секунды"],
+["🎙️","Ведёт протокол приёма","Слушает разговор и сам заполняет карту"],
+["🧠","Помогает в сложных случаях","Дифференциальный диагноз за минуту"],
+["🧪","Разбирает анализы","Проверит отклонения и даст сводку"],
+["🛰️","Следит за пациентами 24/7","Заметит тревожные сигналы между визитами"],
+["🛡️","Страхует от ошибок","Дозировки, взаимодействия, противопоказания"],
+["📚","Опирается на доказательную медицину","Клинические рекомендации, а не догадки"],
+["💸","Приносит доход после приёма",""]];
+F[7][2]="Вы зарабатываете с подписки ваших пациентов";
+var N=F.length,cards=root.querySelector('.csh-cards'),orbs=root.querySelector('.csh-orbs'),cs=[],os=[];
+F.forEach(function(f,i){var c=document.createElement('div');c.className='csh-card';c.innerHTML='<div class="csh-ic">'+f[0]+'</div><div class="csh-ct"><b>'+f[1]+'</b><span>'+f[2]+'</span></div>';cards.appendChild(c);cs.push(c);
+var o=document.createElement('div');o.className='csh-orb';o.style.setProperty('--a',(i*360/N)+'deg');o.innerHTML='<span>'+f[0]+'</span>';orbs.appendChild(o);os.push(o)});
+var rm=matchMedia('(prefers-reduced-motion: reduce)').matches,num=root.querySelector('.csh-num'),bar=root.querySelector('.csh-bar i'),st=root.style,cur=-2,pulse=0,sp=0,tp=0;
+function prog(){var r=root.getBoundingClientRect(),h=root.offsetHeight-innerHeight;return Math.min(1,Math.max(0,-r.top/h))}
+function step(p){var s=p<.06?-1:Math.min(N,Math.floor((p-.06)/.82*N));if(s===cur)return;cur=s;pulse=1;
+cs.forEach(function(c,i){c.classList.toggle('on',i===s);c.classList.toggle('past',i<s)});
+os.forEach(function(o,i){o.classList.toggle('on',i<=s&&s>=0)});
+root.classList.toggle('st',s>=0);root.classList.toggle('fin',s>=N);
+num.textContent=('0'+Math.max(1,Math.min(N,s+1))).slice(-2)}
+function frame(){tp=prog();sp+=(tp-sp)*(rm?1:.12);var p=sp;step(tp);
+pulse*=.92;var t=performance.now()/1000;
+st.setProperty('--ry',(rm?0:Math.sin(p*Math.PI*N)*18)+'deg');
+st.setProperty('--rz',(rm?0:Math.sin(t*1.3)*3)+'deg');
+st.setProperty('--pulse',pulse.toFixed(3));
+var e=Math.min(1,p/.08);st.setProperty('--ty',(-e*30)+'px');st.setProperty('--to',(1-e*.15).toFixed(3));
+st.setProperty('--cy',(-e*30+ (cur>=N?-40:0))+'px');st.setProperty('--cs',(1-e*.08).toFixed(3));
+st.setProperty('--end',Math.max(0,(p-.94)/.06).toFixed(3));
+bar.style.width=(Math.min(1,Math.max(0,(p-.06)/.82))*100)+'%';
+requestAnimationFrame(frame)}
+requestAnimationFrame(frame);
+/* particles */
+var cv=root.querySelector('.csh-fx'),x=cv.getContext('2d'),P=[],W,H,d=Math.min(2,devicePixelRatio||1);
+function rs(){W=cv.clientWidth;H=cv.clientHeight;cv.width=W*d;cv.height=H*d;x.setTransform(d,0,0,d,0,0)}rs();addEventListener('resize',rs);
+for(var i=0;i<(innerWidth<600?45:90);i++)P.push({x:Math.random(),y:Math.random(),r:Math.random()*1.6+.3,v:Math.random()*.0004+.0001,a:Math.random()*6.28,k:Math.random()<.3});
+var vis=true;new IntersectionObserver(function(e){vis=e[0].isIntersecting}).observe(root);
+function pt(){if(vis){x.clearRect(0,0,W,H);P.forEach(function(q){if(!rm){q.y-=q.v*(1+pulse*8);q.a+=.02;if(q.y<-.02)q.y=1.02}
+var al=.35+Math.sin(q.a)*.3;x.beginPath();x.arc(q.x*W+Math.sin(q.a*.5)*6,q.y*H,q.r,0,6.28);x.fillStyle=q.k?'rgba(236,120,220,'+al+')':'rgba(190,170,255,'+al+')';x.fill()})}requestAnimationFrame(pt)}pt();
+})();
+</script>
+
+<main id="f">
+<div class="sec-h rv"><div class="tag">Возможности</div><h2 class="big">Всё для практики — <em>в одном кабинете</em></h2></div>
+<section class="feat  rv"><div class="ft"><div class="tag">01 · ИИ-агент</div><h2>Консультант уровня коллеги — помнит каждого пациента</h2><ul><li>Помнит всё: анамнез, анализы, протоколы и переписку</li><li>Сводка по пациенту — до начала приёма</li><li>Второе мнение за секунды: дифф. ряд, лекарственные взаимодействия, ссылки на рекомендации</li></ul><p class="mut">Опирается на данные пациента и медицинскую литературу. Решение всегда за вами.</p></div><div class="mock glass"><div class="mh">🤖 ИИ-агент · <b>Анна, 34</b></div><div class="chips"><span>🧪 Анализы ×12</span><span>🎙 Протоколы ×3</span><span>📋 Анамнез</span></div><div class="sum"><b>Сводка:</b> ферритин ↓ 3 визита подряд, ТТГ ↑, жалобы на слабость</div><div class="b me">Можно ли назначить железо вместе с левотироксином?</div><div class="b ai">Да, но с интервалом не менее 4 часов: железо снижает всасывание левотироксина. Проверьте св. Т4 через 6–8 недель.</div><div class="src"><span>✓ Данные пациента</span><span>✓ Клин. рекомендации</span><span>✓ Инструкция ЛС</span></div><div class="ex">пример · данные вымышлены</div></div></section>
+<section class="feat r rv"><div class="ft"><div class="tag">02 · Голосовые протоколы</div><h2>Говорите с пациентом — протокол создаётся сам</h2><ul><li>Расшифровка речи</li><li>Резюме визита</li><li>Автозаполнение официальной документации</li></ul></div><div class="mock glass"><div class="mh">🎙 Протокол приёма <span class="rec">● REC 12:48</span></div><div class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><dl><dt>Жалобы</dt><dd>слабость, утомляемость</dd><dt>Анамнез</dt><dd>2 месяца, без лечения</dd><dt>План</dt><dd>св. Т4, контроль ферритина</dd></dl><div class="ex">пример · данные вымышлены</div></div></section>
+<section class="feat  rv"><div class="ft"><div class="tag">03 · Официальные формы</div><h2>Документы — в пару касаний</h2><p>Формы 025/у, 027/у и другие документы формируются на основе данных пациента и протокола приёма. Остаётся проверить и выгрузить PDF.</p><ul><li>Официальные формы в PDF</li><li>Данные подставляются из медкарты</li><li>Всё хранится в карточке пациента</li></ul></div><div class="mock glass"><div class="mh">📑 Официальные формы <span class="pdf">PDF</span></div><div class="doc"><b>025/у</b><span>Медицинская карта амбулаторного пациента</span></div><div class="doc"><b>027/у</b><span>Выписка из медицинской карты</span></div><div class="doc"><b>Протокол</b><span>Осмотр и рекомендации</span></div><div class="doc"><b>Другие</b><span>Документы на основе данных пациента</span></div></div></section>
+<div class="grid">
+<div class="card glass rv hl"><div class="ic">💳</div><div class="tag">Доходы и выплаты</div><h3>Зарабатывайте на пациенте всё время, пока он с вами</h3><p>Не один приём, а месяцы и годы сопровождения: вы получаете доход с каждой подписки пациента — каждый месяц, пока он с вами.</p><div class="bars"><i style="--h:18%"></i><i style="--h:28%"></i><i style="--h:36%"></i><i style="--h:47%"></i><i style="--h:55%"></i><i style="--h:66%"></i><i style="--h:78%"></i><i style="--h:92%"></i></div><div class="ex">Доход растёт с каждым месяцем подписки · пример</div></div>
+<div class="card glass rv"><div class="ic">💬</div><div class="tag">Платный чат с пациентами</div><h3>Переписка с пациентами теперь оплачивается</h3><p>Раньше вы отвечали в мессенджерах бесплатно. Теперь пациент оформляет подписку на вас — и переписка приносит доход каждый месяц.</p><div class="b me" style="margin-top:14px">Доктор, можно уточнить по дозировке?</div><div class="price">Подписка на врача · <b>3 500 ₽/мес</b></div></div>
+<div class="card glass rv"><div class="ic">🗂</div><div class="tag">Карточка пациента</div><h3>Вся история пациента — в одной карточке</h3><p>Анализы, анамнез, протоколы приёмов и переписка собраны в одном месте и разложены по датам. Динамика видна сразу, ничего не нужно искать.</p><div class="chips"><span>🧪 Анализы</span><span>📋 Анамнез</span><span>🎙 Протоколы</span><span>📈 Динамика</span><span>💬 Переписка</span></div></div>
+<div class="card glass rv"><div class="ic">📣</div><div class="tag">Публикации</div><h3>Станьте известным врачом в своей области</h3><p>Публикуйте посты в общей ленте Консилиума: растёт ваша популярность и узнаваемость, а читатели становятся вашими пациентами.</p><div class="stats"><div><b data-n="2400">0</b>прочтений</div><div><b data-n="38" data-p="+">0</b>подписчиков</div><div><b data-n="6" data-p="+">0</b>заявок</div></div><div class="ex">пример</div></div>
+</div>
+<section id="h"><div class="sec-h rv"><div class="tag">Как начать</div><h2 class="big">От регистрации <em>до первого пациента</em></h2></div>
+<ol class="steps">
+<li class="glass rv"><span>📝</span><div><b>Регистрация</b><p>Создайте кабинет врача за пару минут.</p></div></li>
+<li class="glass rv"><span>🧪</span><div><b>Тестовый пациент</b><p>Сразу попробуйте ИИ-консультанта, протоколы и чат на ИИ-пациенте.</p></div></li>
+<li class="glass rv"><span>🪪</span><div><b>Проверка документов</b><p>Загрузите документы об образовании — мы проверим и одобрим профиль.</p></div></li>
+<li class="glass rv"><span>🚀</span><div><b>Работа с пациентами</b><p>После одобрения открываются чаты с пациентами и публикации.</p></div></li></ol></section>
+<section><div class="sec-h rv"><div class="tag">Ответственно</div><h2 class="big">ИИ помогает — <em>решает врач</em></h2><p class="mut c">Консультант предлагает гипотезы и вопросы, но клиническое решение всегда остаётся за вами.</p></div>
+<div class="g3"><div class="card glass rv"><div class="ic">🇷🇺</div><h3>Серверы в России</h3><p>Данные пациентов хранятся на серверах в РФ.</p></div><div class="card glass rv"><div class="ic">🔐</div><h3>Доступ по согласию</h3><p>Вы видите данные пациента только после одобрения его заявки.</p></div><div class="card glass rv"><div class="ic">🪪</div><h3>Проверенные врачи</h3><p>Работа с пациентами — после проверки документов.</p></div></div></section>
+<section id="q"><div class="sec-h rv"><div class="tag">Вопросы</div><h2 class="big">Частые <em>вопросы</em></h2></div><div class="faq">
+<details class="glass rv"><summary>Можно попробовать до проверки документов?</summary><p>Да. Сразу после регистрации доступен тестовый ИИ-пациент: на нём можно опробовать консультанта, протоколы и чат.</p></details><details class="glass rv"><summary>Что даёт одобрение профиля?</summary><p>После проверки документов открываются чаты с реальными пациентами и публикации в ленте.</p></details><details class="glass rv"><summary>Как ко мне попадают пациенты?</summary><p>Пациент находит вас по ФИО, ссылке или QR-коду и отправляет заявку, а вы её одобряете.</p></details><details class="glass rv"><summary>ИИ ставит диагноз за меня?</summary><p>Нет. Ассистент предлагает дифференциальный ряд и уточняющие вопросы. Диагноз и лечение определяет врач.</p></details><details class="glass rv"><summary>Как я зарабатываю?</summary><p>Пациент оформляет подписку на вас (3 500 ₽ в месяц), а вы получаете процент с каждой подписки — всё время, пока пациент с вами. Доходы и выплаты видны в кабинете.</p></details>
+</div></section>
+<section><div class="sec-h rv"><div class="tag">Видео</div><h2 class="big">Консилиум <em>за минуту</em></h2><p class="mut c">От врачей — для врачей</p></div>
+<div class="vid glass rv"><video src="https://api.appconsilium.ru/static/kx/kx-promo-doc.2ddd85803d.mp4" poster="https://api.appconsilium.ru/static/kx/kx-promo-doc.29bfc97e0d.jpg" preload="metadata" controls playsinline></video></div></section>
+<section><div class="club glass rv"><div class="tag">Скоро</div><h2 class="big">Клуб врачей <em>Консилиума</em></h2><p class="mut">Мы строим сильное профессиональное и деловое сообщество врачей. Здесь коллеги помогают друг другу — с клиническими случаями, практикой и развитием.</p>
+<div class="g3"><div class="card"><div class="ic">🏛</div><h3>Врачебные ассоциации</h3><p>Объединения по специальностям внутри платформы</p></div><div class="card"><div class="ic">🔒</div><h3>Закрытые чаты врачей</h3><p>Только для проверенных коллег: обсуждайте случаи и делитесь опытом</p></div><div class="card"><div class="ic">🤝</div><h3>Бизнес-клуб</h3><p>Партнёрства, направления пациентов и рост вашей практики</p></div></div>
+<div class="av"><span>👩‍⚕️</span><span>👨‍⚕️</span><span>👩‍⚕️</span><span>👨‍⚕️</span><b>Присоединяйтесь первыми — зарегистрируйтесь сейчас</b></div></div></section>
+<section class="fin rv"><img src="https://api.appconsilium.ru/storage/v1/object/public/avatars/landing/mascot_static.png" alt="" width="160" height="160"><h2 class="big">Попробуйте на <em>тестовом пациенте</em></h2><p class="mut c">Регистрация займёт пару минут, ИИ-пациент уже ждёт.</p><a class="csh-cta" href="https://d7f660.creatium.site/doctor-login">Попробовать бесплатно<span>→</span></a></section>
+</main>
+<footer><div><a href="https://09f2d0.creatium.site/">Пациентам</a><a href="#f">Возможности</a><a href="https://d7f660.creatium.site/doctor-login">Вход для врача</a></div><p>ИИ-ассистент Консилиума — вспомогательный инструмент. Он не является медицинским изделием, не ставит диагнозы и не заменяет клиническое суждение врача. Ответственность за диагноз и лечение несёт лечащий врач.</p><p>© Консилиум</p></footer><script>
+(function(){var nav=document.querySelector('.nav'),hero=document.getElementById('csh');addEventListener('scroll',function(){nav.classList.toggle('on',scrollY>hero.offsetHeight-innerHeight*1.2)},{passive:true});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var t=e.target;t.classList.add('in');io.unobserve(t);
+t.querySelectorAll('[data-n]').forEach(function(b){var n=+b.dataset.n,p=b.dataset.p||'',s=performance.now();(function f(now){var k=Math.min(1,(now-s)/1400);k=1-Math.pow(1-k,3);b.textContent=p+Math.round(n*k).toLocaleString('ru-RU');if(k<1)requestAnimationFrame(f)})(s)})})},{threshold:.15,rootMargin:'0px 0px -8% 0px'});
+document.querySelectorAll('.rv').forEach(function(e){io.observe(e)})})();
+</script></body></html>
