@@ -1,7 +1,7 @@
 <!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f6f3ff"><title>Консилиум для врачей — меньше рутины, больше медицины</title><meta name="description" content="ИИ-ассистент врача: документация, протоколы, анализы, доход с подписки пациентов."><link rel="icon" href="https://api.appconsilium.ru/storage/v1/object/public/avatars/landing/mascot_static.png"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet"><style>
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f6f3ff;color:#1d1533;font-family:Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:inherit}
-.nav{position:fixed;top:10px;left:10px;right:10px;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:8px 8px 8px 12px;border-radius:18px;background:rgba(255,255,255,.72);border:1px solid #ECEAF2;box-shadow:0 8px 30px rgba(108,74,212,.12);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);transform:translateY(-120%);transition:transform .5s cubic-bezier(.2,1,.3,1)}
+.nav{position:fixed;top:calc(env(safe-area-inset-top, 0px) + 12px);left:10px;right:10px;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:8px 8px 8px 12px;border-radius:18px;background:rgba(255,255,255,.72);border:1px solid #ECEAF2;box-shadow:0 8px 30px rgba(108,74,212,.12);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);transform:translateY(-120%);transition:transform .5s cubic-bezier(.2,1,.3,1)}
 .nav.on{transform:none}.nb{color:#1d1533;display:flex;align-items:center;gap:8px;font-weight:800;text-decoration:none}.nb i{width:28px;height:28px;border-radius:9px;display:grid;place-items:center;background:linear-gradient(135deg,#6C4AD4,#8B6BE0)}
 .nav nav{display:none;gap:22px;font-size:14px}.nav nav a{text-decoration:none;color:#5C4E78}
 .nl{color:#fff;padding:9px 18px;border-radius:12px;background:linear-gradient(90deg,#7a55ec,#d34fc0);font-weight:700;text-decoration:none;font-size:14px}
@@ -89,7 +89,7 @@ footer{padding:30px 18px 40px;text-align:center;border-top:1px solid #ECEAF2;col
 .a1{width:70vmin;height:70vmin;left:-20vmin;top:20%;background:#7a55ec;opacity:.45;animation:cshA 12s ease-in-out infinite alternate}
 .a2{width:60vmin;height:60vmin;right:-18vmin;top:45%;background:#d34fc0;opacity:.32;animation:cshA 14s ease-in-out infinite alternate-reverse}
 @keyframes cshA{to{transform:translate(8vmin,-6vmin) scale(1.15)}}
-.csh-top{position:absolute;top:0;left:0;right:0;padding:calc(env(safe-area-inset-top) + 22px) 22px 0;text-align:center;z-index:5;transform:translateY(var(--ty,0));opacity:var(--to,1)}
+.csh-top{position:absolute;top:0;left:0;right:0;padding:calc(env(safe-area-inset-top, 0px) + 16px + 20px) 22px 0;text-align:center;z-index:5;transform:translateY(var(--ty,0));opacity:var(--to,1)}
 .csh-brand{display:inline-flex;align-items:center;gap:8px;padding:6px 14px 6px 6px;border-radius:99px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);font-size:14px}
 .csh-brand i{width:28px;height:28px;border-radius:9px;display:grid;place-items:center;background:linear-gradient(135deg,var(--p),var(--p2));box-shadow:0 4px 14px rgba(139,107,224,.6)}
 .csh-brand i svg{width:12px;height:16px}
