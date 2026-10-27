@@ -52,7 +52,7 @@ footer{padding:30px 18px 40px;text-align:center;border-top:1px solid #ECEAF2;col
 .kl-doc:hover{transform:translateY(-3px) rotate(-1deg)}
 .kl-doc b{font-size:18px;color:#6C4AD4}.kl-doc span{font-size:12px;color:#5C4E78;line-height:1.4}
 .kd-mock.rv{transform:translateY(34px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1);transition-delay:.16s}.kd-mock.rv.in{transform:none}
-.csh-fade{height:140px;margin-top:-1px;background:linear-gradient(180deg,#0b0619 0%,#2a1a4f 35%,#b9a9e6 75%,#f6f3ff 100%)}main#f{scroll-snap-align:start}.csh-stage:after{display:none}
+section.csh{margin:0}.csh-fade{height:140px;margin-top:-1px;background:linear-gradient(180deg,#0b0619 0%,#2a1a4f 35%,#b9a9e6 75%,#f6f3ff 100%)}main#f{scroll-snap-align:start}.csh-stage:after{display:none}
 </style></head><body id="top"><header class="nav"><a class="nb" href="#top"><i><svg width="13" height="17" viewBox="0 0 571 736"><path fill="#fff" transform="matrix(1 0 0 -1 0 736)" d="M98 725 c-62 -11 -90 -84 -51 -133 42 -54 129 -34 144 34 12 56 -38 109 -93 99z M453 621 c-134 -22 -368 -217 -424 -353 -62 -151 35 -257 237 -257 164 -1 266 38 284 107 17 64 -49 136 -159 173 -67 22 -181 29 -166 10 3 -4 7 -5 40 -15 67 -22 104 -39 131 -61 42 -34 27 -74 -31 -80 -123 -12 -211 149 -126 230 27 26 44 34 160 75 98 34 130 52 151 84 34 51 -20 99 -97 87z"/></svg></i>Консилиум</a><nav><a href="#f">Возможности</a><a href="#h">Как начать</a><a href="#q">Вопросы</a><a href="https://09f2d0.creatium.site/">Пациентам</a></nav><a class="nl" href="https://d7f660.creatium.site/doctor-login">Войти</a></header><!-- Консилиум · hero (вставить в блок «HTML-код» Creatium) -->
 <section class="csh" id="csh">
 <div class="csh-snaps"><i style="top:0svh"></i><i style="top:100svh"></i><i style="top:200svh"></i><i style="top:300svh"></i><i style="top:400svh"></i><i style="top:500svh"></i><i style="top:600svh"></i><i style="top:700svh"></i><i style="top:800svh"></i><i style="top:900svh"></i></div><div class="csh-stage">
@@ -81,7 +81,7 @@ footer{padding:30px 18px 40px;text-align:center;border-top:1px solid #ECEAF2;col
 </div>
 </section>
 <style>
-.csh{--p:#6C4AD4;--p2:#8B6BE0;--pk:#E25BC8;--ink:#1d1533;position:relative;height:1000svh;background:#f6f3ff;font-family:Manrope,Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#fff;-webkit-font-smoothing:antialiased}
+.csh{--p:#6C4AD4;--p2:#8B6BE0;--pk:#E25BC8;--ink:#1d1533;position:relative;height:1000svh;background:#0b0619;font-family:Manrope,Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#fff;-webkit-font-smoothing:antialiased}
 .csh *{box-sizing:border-box;margin:0}.csh-snaps{position:absolute;inset:0;pointer-events:none}.csh-snaps i{position:absolute;left:0;width:1px;height:100svh;scroll-snap-align:start;scroll-snap-stop:always}html{scroll-snap-type:y proximity}
 .csh-stage{position:sticky;top:0;height:100svh;overflow:hidden;background:radial-gradient(120% 70% at 50% 0%,#2a1766 0%,#140b33 45%,#0b0619 100%)}
 .csh-stage:after{content:"";position:absolute;left:0;right:0;bottom:0;height:120px;background:linear-gradient(rgba(246,243,255,0),#f6f3ff);opacity:var(--end,0);transition:opacity .8s;pointer-events:none;z-index:9}
@@ -143,7 +143,7 @@ footer{padding:30px 18px 40px;text-align:center;border-top:1px solid #ECEAF2;col
 @media (min-width:900px){.csh-core{top:55%;width:340px}.csh-cards{height:170px}.csh-ct b{font-size:24px}}
 @media (max-height:700px){.csh-core{width:min(52vw,250px);top:50%}.csh-sub{display:none}}
 @media (prefers-reduced-motion:reduce){.csh *,.csh *:before,.csh *:after{animation:none!important;transition:none!important}}
-.csh-fade{height:140px;margin-top:-1px;background:linear-gradient(180deg,#0b0619 0%,#2a1a4f 35%,#b9a9e6 75%,#f6f3ff 100%)}main#f{scroll-snap-align:start}.csh-stage:after{display:none}
+section.csh{margin:0}.csh-fade{height:140px;margin-top:-1px;background:linear-gradient(180deg,#0b0619 0%,#2a1a4f 35%,#b9a9e6 75%,#f6f3ff 100%)}main#f{scroll-snap-align:start}.csh-stage:after{display:none}
 </style>
 <script>
 (function(){
@@ -172,7 +172,7 @@ pulse*=.92;var t=performance.now()/1000;
 st.setProperty('--ry',(rm?0:Math.sin(p*Math.PI*9)*18)+'deg');
 st.setProperty('--rz',(rm?0:Math.sin(t*1.3)*3)+'deg');
 st.setProperty('--pulse',pulse.toFixed(3));
-var e=Math.min(1,p/.08);st.setProperty('--ty',(-e*30)+'px');st.setProperty('--to',(1-e*.15).toFixed(3));
+var e=Math.min(1,p/.08);st.setProperty('--ty',(-e*12)+'px');st.setProperty('--to',(1-e*.15).toFixed(3));
 st.setProperty('--cy',(-e*30+ (cur>=N?-40:0))+'px');st.setProperty('--cs',(1-e*.08).toFixed(3));
 
 bar.style.width=(Math.max(0,Math.min(N,cur+1))/N*100)+'%';
